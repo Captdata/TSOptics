@@ -1,0 +1,203 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+body {
+  line-height: 1.4;
+}
+header {
+  color: white;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+.container, header {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.logo{
+  padding-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 1.5rem;
+  width: auto;
+}
+.logo span {
+  padding-left: 1rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+nav span {
+  margin: 1rem 1rem;
+}
+span.mob-nav  {
+  display: none;
+}
+.main {
+  background-image: url(../images/glasses-bg.png);
+  background-position: center;
+  background-repeat:no-repeat;
+  height: 30rem;
+  background-size: cover;
+  padding-top: 1rem;
+}
+.motto-con {
+  width: 1032px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+.motto {
+  margin-top: 10rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  width: 24rem;
+}
+/* ------------ MAIN BODY ------------------ */
+.services {
+  display: flex;
+  margin: 3rem auto;
+  justify-content: center;
+}
+.serv {
+  height: 8rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 3rem;
+}
+.serv img {
+  height: auto;
+}
+.fit img, .deliv img {
+  width: 5rem;
+}
+.exam img {
+  width: 3.5rem;
+}
+.lower {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.low {
+  width: 35%;
+  margin-right: 5%;
+}
+.above {
+  font-weight: bold;
+  width: 10rem;
+  background-color: cadetblue;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/*  ----------------- FOOTER ----------------- */
+footer .container {
+  background-color: azure;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+}
+footer img {
+  height: 1.5rem;
+  width: auto;
+  padding-right: 1rem;
+}
+/*  ------------------ Responsive Section -------------- */
+@media screen and (max-width: 1032px) {
+  .main {
+    height: 22rem;
+    padding-top: 0rem;
+    width: 100%;
+  }
+  .container,header {
+    width: 100%;
+  }
+  .motto-con {
+    width: 100%;
+  }
+  .motto {
+    margin: 5rem 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .logo span {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  span.desktop {
+    display: none;
+  }
+  span.mob-nav {
+    display: block;
+  }
+  .main {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .motto {
+    width: 100%;
+    margin: 9rem auto 0 auto;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .services {
+    flex-direction: column;
+    margin: 3.77rem auto;
+    align-items: center;
+  }
+  .serv {
+    font-size: 0.77rem;
+    padding: 0;
+    justify-content: space-around;
+    height: 8rem;
+  }
+  .fit {
+    margin: 0;
+  }
+  .lower {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .low {
+    width: 100%;
+    margin: 0 auto 4rem auto;
+  }
+  .low p {
+    font-size: 0.77rem;
+  }
+  .above {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+  footer .container {
+    justify-content: center;
+    padding: 4rem 0;
+  }
+  footer span {
+    display: none;
+  }
+}
